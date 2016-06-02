@@ -1,3 +1,29 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#blog-container {
+    background-color: #444;
+    padding: 10px;
+}
+
+#blog-heading {
+    color: #ff4f00;
+}
+
+.post-title {
+    color: #eee;
+}
+
+.post-body {
+    border: 2px solid #ffb399;
+    padding: 20px;
+    color: #666;
+    background-color: #eee;
+    margin: 5px;
+}
+
+.btn-dutch {
+    background-color: #ff4f00;
+    color: #000!important;
+    margin-left: 10px;
+}

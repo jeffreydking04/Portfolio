@@ -1,7 +1,10 @@
 <div id="blog-container">
   <div id="blog-heading">
-    <h1>The Blog</h1>
+    <h1>Musings</h1><br>
+    <h3 id="blog-prologue">A web log of my journey into web development.</h3>
   </div>
+  <br>
+  <%= link_to 'New Post', new_post_path, class: 'btn btn-dutch' %>
 
   <% @posts.each do |post| %>
     <div class="media">
@@ -16,7 +19,5 @@
       </div>
     </div>
   <% end %>
-  <br>
 
-  <%= link_to 'New Post', new_post_path, class: 'btn btn-dutch' %>
 </div>

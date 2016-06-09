@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by(name: params[:session][:name]) 
-    if user 
+    if params[:session][:password] == user.password
       create_session(user)
       flash[:notice] = "Welcome, #{user.name}!"
       redirect_to root_path

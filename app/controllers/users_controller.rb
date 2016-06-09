@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def new
-    redirect_to root_path if (current_user.nil || current_user.name != 'jeffrey')
+    redirect_to root_path if (current_user.nil? || current_user.name != 'jeffrey')
     @user = User.new    
   end
 

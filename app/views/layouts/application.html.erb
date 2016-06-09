@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>jd king</title>
+  <title>jd king mageling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -15,7 +15,18 @@
         <li><%= link_to "Blog", posts_path %></li>
         <li><%= link_to "Projects", projects_path %></li>
         <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Create User", new_user_path %></li>
+        <div class="pull-right user-info">
+          <% if current_user %>
+            <div class="pull-right">
+              <%= link_to "Sign Out", session_path(current_user), method: :delete, class: 'btn btn-dutch' %>
+            </div>
+          <% else %>
+            <%= link_to "Sign In", new_session_path, class: 'btn btn-dutch' %>
+          <% end %>
+        </div>
       </ul>
+      <br><br>
       <div class="container">
         <%= yield %>
       </div>

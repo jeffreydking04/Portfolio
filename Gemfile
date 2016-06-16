@@ -22,6 +22,7 @@ gem 'bcrypt'
 gem 'figaro', '1.0'
 gem 'pry'
 gem 'devise'
+gem 'redcarpet', '~> 3.0.0'
 
 group :development, :test do
   gem 'byebug'

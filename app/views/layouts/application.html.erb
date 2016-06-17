@@ -23,6 +23,9 @@
             <div class="pull-right">
               <%= link_to "Sign Out", session_path(current_user), method: :delete, class: 'btn btn-dutch' %>
             </div>
+            <div class="pull-right name">
+              <%= current_user.name %>
+            </div>
           <% else %>
             <%= link_to "Sign In", new_session_path, class: 'btn btn-dutch' %>
           <% end %>

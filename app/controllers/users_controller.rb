@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
   def new
     redirect_to root_path if (current_user.nil? || current_user.name != 'jeffrey')
-    @user = User.new    
+    @user = User.new 
+    @users = User.all
   end
 
   def create
@@ -10,8 +11,7 @@ class UsersController < ApplicationController
     @user.password = params[:user][:password]
 
     if @user.save
-      create_session(@user)
-      redirect_to root_path
+      render :new
     end
   end
 end

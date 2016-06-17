@@ -20,7 +20,7 @@
           <p><%= markdown(post.body) %></p>
       </div>
     </div>
-    <% if current_user && current_user.name = 'jeffrey' %>
+    <% if current_user && current_user.name == 'jeffrey' %>
       <%= link_to 'Edit', edit_post_path(post), class: 'btn btn-dutch' %>
       <%= link_to 'Delete', post, method: :delete, class: 'btn btn-purple', data: {confirm: 'Are you sure you want to delete this post?'} %>
     <% end %>

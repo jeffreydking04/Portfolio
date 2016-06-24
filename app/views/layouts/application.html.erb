@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>jd king, software engineer</title>
+  <title>jd king, nerd</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -21,7 +21,7 @@
         <div class="pull-right user-info">
           <% if current_user %>
             <div class="pull-right">
-              <%= link_to "Sign Out", session_path(current_user), method: :delete, class: 'btn btn-dutch' %>
+              <%= link_to "Sign Out", session_path(current_user), method: :delete, class: 'btn btn-sign-out' %>
             </div>
             <div class="pull-right name">
               <%= current_user.name %>

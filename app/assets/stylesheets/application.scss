@@ -17,15 +17,18 @@
 @import "bootstrap";
 
 body {
+  margin: auto;
   background-color: #fff;
 }
 
 .nav {
-  margin-top: 5px;
+  margin: auto;
+  margin-top: .75rem;
   color: #000;
 }
 
 .container {
+  margin: auto;
   color: #444;
 }
 
@@ -39,4 +42,25 @@ body {
   margin-top: 8px;
   color: #628;
   font-size: 1.5em;
+}
+
+.btn-dutch {
+    background-color: #ff4f00;
+    color: #000!important;
+    margin-left: 10px;
+}
+
+a:hover {
+  background-color: #3d0099;
+  color: #fff!important;
+}
+
+.btn-sign-out {
+  background-color: #fff;
+  color: #777!important;
+}
+
+.btn-sign-out:hover {
+  background-color: #777;
+  color: #fff;
 }
